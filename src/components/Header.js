@@ -1,5 +1,5 @@
 import "../App.css";
-import profileImg from '../assests/Alternative-1/foto.png';
+import headerImg from '../assests/Alternative-1/foto.png';
 
 
 export default function Header() {
@@ -12,7 +12,7 @@ export default function Header() {
           <button className="rounded bg-[#CBF281] text-[#4731D3]">Github</button>
           <button className="rounded bg-[#CBF281] text-[#4731D3]">LinkedIn</button>
         </div>
-        <img src={profileImg} className="w-1/3" />
+        <img src={headerImg} className="w-1/3" />
       </div>
     </header>
   );

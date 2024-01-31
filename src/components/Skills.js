@@ -9,7 +9,7 @@ import reduxLogo from "../assests/Alternative-1/Skills-icons/Group 101.png";
 export default function Skills() {
   return (
     <section className="Skills">
-      <div className="w-3/5 flex gap-40">
+      <div className="w-3/5 flex gap-40 pt-12 pb-12">
         <div className="text-[#4832D3] text-[48px] font-bold">Skills</div>
         <div className="flex flex-wrap gap-10 justify-between">
         <div className="flex gap-5"><img src={jsLogo}/> <p>JAVASCRIPT</p></div>
