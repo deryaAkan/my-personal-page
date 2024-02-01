@@ -18,14 +18,14 @@ const skillsData = [
 
 export default function Skills() {
   return (
-    <section className="Skills">
+    <section className="CommonThings bg-white text-[#777777]">
       <div className="w-3/5 flex gap-40 pt-12 pb-12">
         <div className="text-[#4832D3] text-[48px] font-bold">Skills</div>
         <div className="flex flex-wrap gap-10 justify-between">
           {skillsData.map((skill, index) => (
             <div key={index} className="flex gap-5">
               <img src={skill.logo} alt={skill.name} />
-              <p>{skill.name}</p>
+              <p className='text-[24px]'>{skill.name}</p>
             </div>
           ))}
         </div>

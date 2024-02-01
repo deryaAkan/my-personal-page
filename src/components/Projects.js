@@ -8,21 +8,21 @@ const projectsData = [
     imgSrc: projectsIMG2,
     title: "Workintech",
     description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-    buttons: ["Button", "Button", "Button"],
+    buttons: ["react", "redux", "vercel"],
     links: ["vercel", "visit website"]
   },
   {
     imgSrc: projectsIMG1,
     title: "Journey",
     description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-    buttons: ["Button", "Button", "Button"],
+    buttons: ["react", "redux", "vercel"],
     links: ["vercel", "visit website"]
   }
 ];
 
 export default function Projects() {
   return (
-    <section className="Projects flex-col">
+    <section className="CommonThings flex-col bg-[#CBF281] gap-8">
       <h2 className="text-[48px] text-[#4731D3] font-bold justify-start w-3/5">
         Projects
       </h2>
@@ -34,7 +34,7 @@ export default function Projects() {
             <p className="text-[16px] text-[#383838]">{project.description}</p>
             <div className="flex">
               {project.buttons.map((button, btnIndex) => (
-                <button key={btnIndex} className="rounded-xl bg-[#4731D3]">{button}</button>
+                <button key={btnIndex} className="rounded-xl bg-[#4731D3] text-[14px]">{button}</button>
               ))}
             </div>
             <div className="flex">

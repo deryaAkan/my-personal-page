@@ -4,7 +4,7 @@ import headerImg from '../assests/Alternative-1/foto.png';
 
 export default function Header() {
   return (
-    <header className="Header">
+    <header className="Header CommonThings">
       <div className="w-3/5 flex">
         <div className="flex-col">
           <h1 className="text-[#CBF281] text-[54px] font-bold">I am a Frontend Developer...</h1>

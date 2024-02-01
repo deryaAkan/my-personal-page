@@ -16,7 +16,7 @@ const aboutMeData = [
 
 export default function Profile() {
   return (
-    <main className="Profile flex-col">
+    <main className="CommonThings flex-col bg-[#4731D3] ">
       <h2 className="text-[48px] text-[#CBF281] font-bold justify-start w-3/5">Profile</h2>
       <div className="w-3/5">
         <div className="flex">
