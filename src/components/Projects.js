@@ -26,18 +26,20 @@ export default function Projects() {
       <h2 className="text-[48px] text-[#4731D3] font-bold justify-start w-3/5">
         Projects
       </h2>
+
       {projectsData.map((project, index) => (
-        <div key={index} className="w-3/5 bg-[#fff] rounded-xl flex">
+        <div key={index} className="w-3/5 bg-[#fff] rounded-xl flex gap-8">
           <img src={project.imgSrc} alt={`Project ${index + 1}`} />
-          <div className="flex-col">
+          <div className="flex flex-col gap-5">
             <h3 className="font-bold text-[32px] text-[#4731D3]">{project.title}</h3>
             <p className="text-[16px] text-[#383838]">{project.description}</p>
-            <div className="flex">
+
+            <div className="flex gap-5">
               {project.buttons.map((button, btnIndex) => (
                 <button key={btnIndex} className="rounded-xl bg-[#4731D3] text-[14px]">{button}</button>
               ))}
             </div>
-            <div className="flex">
+            <div className="flex gap-5 text-[16px] underline">
               {project.links.map((link, linkIndex) => (
                 <a key={linkIndex} className="text-[#383838]">{link}</a>
               ))}

@@ -1,6 +1,7 @@
 import React from 'react';
 import "../App.css";
-import profileImg from "../assests/Alternative-1/image 2.svg";
+import headerImg from '../assests/Alternative-1/foto.png';
+
 
 const basicInformationData = [
   { label: "Doğum tarihi", value: "4.03.1996" },
@@ -16,11 +17,11 @@ const aboutMeData = [
 
 export default function Profile() {
   return (
-    <main className="CommonThings flex-col bg-[#4731D3] ">
+    <main className="CommonThings flex-col bg-[#4731D3] gap-8">
       <h2 className="text-[48px] text-[#CBF281] font-bold justify-start w-3/5">Profile</h2>
-      <div className="w-3/5">
-        <div className="flex">
-          <div className="flex flex-col gap-8 pt-14 pb-14">
+      <div className="flex w-3/5 gap-8">
+        <div className="flex gap-8" >
+          <div className="flex flex-col gap-8 grow">
             <p className="text-[30px] font-normal">Basic Information</p>
             {basicInformationData.map((item, index) => (
               <p key={index} className="text-[16px]">
@@ -28,8 +29,8 @@ export default function Profile() {
               </p>
             ))}
           </div>
-          <img src={profileImg} alt="Profile" />
-          <div className="flex flex-col gap-8 pt-14 pb-14">
+          <img src={headerImg} alt="Profile" className='grow-0'/>
+          <div className="flex flex-col gap-8 w-1/3 grow">
             <p className="text-[30px] font-normal">About Me</p>
             {aboutMeData.map((item, index) => (
               <p key={index} className="text-[16px]">{item}</p>

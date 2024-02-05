@@ -12,11 +12,12 @@ export default function Footer() {
     ];
 
     return (
-        <footer className='CommonThings bg-white text-[#777777]'>
-            <div className='w-2/6 flex flex-col justify-center items-center'>
+        <footer className='CommonThings bg-white text-[#777777] gap-5'>
+            <div className='w-1/2 flex flex-col justify-center items-center gap-5'>
                 <h3 className='font-bold text-[#4731D3] text-[48px]'>Send me a message!</h3>
+               
                 <p className='font-normal text-[24px]'>Got a question or proposal, or just want to say hello? Go ahead.</p>
-                <a className='text-[20px] text-[#4731D3]'>almilasucode@gmail.com</a>
+                <a className='text-[20px] text-[#4731D3] underline'>almilasucode@gmail.com</a>
                 <div className='ICONSSS flex flex-wrap gap-5'>
                     {icons.map((iconObject, index) => (
                         <FontAwesomeIcon key={index} icon={iconObject.icon} className={iconObject.className} />
