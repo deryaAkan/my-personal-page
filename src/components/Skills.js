@@ -18,10 +18,10 @@ const skillsData = [
 
 export default function Skills() {
   return (
-    <section className="CommonThings bg-white text-[#777777]">
-      <div className="w-3/5 flex gap-10 pt-12 pb-12">
-        <div className="text-[#4832D3] text-[48px] font-bold">Skills</div>
-        <div className="flex flex-wrap gap-10">
+    <section className="CommonThings bg-white text-[#777777] dark:bg-[#252128]">
+      <div className="w-2/3 gap-24 flex pt-12 pb-12">
+        <div className="text-[#4832D3] text-[48px] font-bold dark:text-[#CBF281]">Skills</div>
+        <div className="flex flex-wrap gap-24 dark:text-white">
           {skillsData.map((skill, index) => (
             <div key={index} className="flex items-center w-72 gap-5">
               <img src={skill.logo} alt={skill.name} />

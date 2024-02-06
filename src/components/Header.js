@@ -2,22 +2,16 @@ import React from "react";
 import "../App.css";
 import headerImg from "../assests/Alternative-1/foto.png";
 import githubSvg from "../assests/Alternative-1/svg-img/brand/github.svg";
+import ToggleThemeButton from "./ToggleThemeButton";
+import LanguageOption from "./LanguageOption";
 
-const Header = () => {
+const Header = ({ theme, onToggle }) => {
   return (
-    <header className="Header CommonThings">
-      <div className="w-3/5 flex flex-col gap-5">
+    <header className={`Header CommonThings ${theme === 'dark' ? 'darkHeader' : ''}`}>
+      <div className="w-2/3 flex flex-col gap-5">
         <div className="flex gap-5 justify-end text-[15px] font-bold">
-          <button>
-            <span className="text-[#CBF281]">TÜRKÇE'</span>YE GEÇ
-          </button>
-          <div className="flex items-center">
-          <label className="switch">
-            <input type="checkbox" defaultChecked />
-            <span className="slider round bg-[]"></span>
-          </label>
-          <p className="text-[15px] font-bold text-[#4731D3]">DARK MODE</p>
-          </div>
+          <LanguageOption />
+          <ToggleThemeButton theme={theme} onToggle={onToggle}/>
         </div>
         <div className="flex">
           <div className="flex flex-col gap-5">
@@ -29,11 +23,11 @@ const Header = () => {
               great user experiences.
             </p>
             <div className="flex gap-5">
-              <button className="flex rounded-md bg-white items-center font-small text-[#4731D3]">
+              <button className="flex rounded-md bg-white items-center font-small text-[#4731D3] dark:bg-[#252128] dark:text-white">
                 <img src={githubSvg} alt="GitHub" className="w-5 h-5 m-2" />{" "}
                 <p>GitHub</p>
               </button>
-              <button className="rounded-md bg-white font-small text-[#4731D3]">
+              <button className="rounded-md bg-white font-small text-[#4731D3] dark:bg-[#252128] dark:text-white">
                 LinkedIn
               </button>
             </div>
