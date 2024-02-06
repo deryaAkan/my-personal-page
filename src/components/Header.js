@@ -9,12 +9,12 @@ const Header = ({ theme, onToggle }) => {
   return (
     <header className={`Header CommonThings ${theme === 'dark' ? 'darkHeader' : ''}`}>
       <div className="w-2/3 flex flex-col gap-5">
-        <div className="flex gap-5 justify-end text-[15px] font-bold">
+        <div className="flex gap-5 justify-end text-[15px] font-bold flex-wrap">
           <LanguageOption />
           <ToggleThemeButton theme={theme} onToggle={onToggle}/>
         </div>
-        <div className="flex">
-          <div className="flex flex-col gap-5">
+        <div className="flex flex-wrap">
+          <div className="flex flex-col gap-5 w-1/2 grow">
             <h1 className="text-[#CBF281] text-[54px] font-bold">
               I am a Frontend Developer..
             </h1>
@@ -32,7 +32,7 @@ const Header = ({ theme, onToggle }) => {
               </button>
             </div>
           </div>
-          <img src={headerImg} alt="Header" className="w-1/3" />
+          <img src={headerImg} alt="Header" className="grow-0" />
         </div>
       </div>
     </header>

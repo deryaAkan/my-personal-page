@@ -20,7 +20,7 @@ export default function Profile() {
     <main className="CommonThings flex-col bg-[#4731D3] gap-8 dark:bg-[#171043]">
       <h2 className="text-[48px] text-[#CBF281] font-bold justify-start w-2/3">Profile</h2>
       <div className="flex w-2/3 gap-8">
-        <div className="flex gap-8" >
+        <div className="flex gap-8 flex-wrap" >
           <div className="flex flex-col gap-8 grow">
             <p className="text-[30px] font-normal">Basic Information</p>
             {basicInformationData.map((item, index) => (

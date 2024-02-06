@@ -28,9 +28,9 @@ export default function Projects() {
       </h2>
 
       {projectsData.map((project, index) => (
-        <div key={index} className="w-2/3 bg-[#fff] rounded-xl flex gap-8 dark:bg-[#2B2727]">
+        <div key={index} className="w-2/3 bg-[#fff] rounded-xl flex flex-wrap gap-8 dark:bg-[#2B2727]">
           <img src={project.imgSrc} alt={`Project ${index + 1}`} />
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 w-80">
             <h3 className="font-bold text-[32px] text-[#4731D3] dark:text-[#C1BAED]">{project.title}</h3>
             <p className="text-[16px] text-[#383838] dark:text-white">{project.description}</p>
 
