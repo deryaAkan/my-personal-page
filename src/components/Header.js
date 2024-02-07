@@ -3,14 +3,15 @@ import "../App.css";
 import headerImg from "../assests/Alternative-1/foto.png";
 import githubSvg from "../assests/Alternative-1/svg-img/brand/github.svg";
 import ToggleThemeButton from "./ToggleThemeButton";
-import LanguageOption from "./LanguageOption";
+import LanguageSelector from "./ LanguageSelector";
+
 
 const Header = ({ theme, onToggle }) => {
   return (
     <header className={`Header CommonThings ${theme === 'dark' ? 'darkHeader' : ''}`}>
       <div className="w-2/3 flex flex-col gap-5">
         <div className="flex gap-5 justify-end text-[15px] font-bold flex-wrap">
-          <LanguageOption />
+          <LanguageSelector />
           <ToggleThemeButton theme={theme} onToggle={onToggle}/>
         </div>
         <div className="flex flex-wrap">
@@ -19,15 +20,14 @@ const Header = ({ theme, onToggle }) => {
               I am a Frontend Developer..
             </h1>
             <p className="text-[24px] font-normal">
-              ...who likes to craft solid and scalable frontend products with
-              great user experiences.
+            ...who likes to craft solid and scalable frontend products with great user experiences.
             </p>
             <div className="flex gap-5">
-              <button className="flex rounded-md bg-white items-center font-small text-[#4731D3] dark:bg-[#252128] dark:text-white">
+              <button className="flex rounded-md bg-white items-center font-small text-[#4731D3] dark:bg-[#252128] dark:text-white dark:border-white border p-2">
                 <img src={githubSvg} alt="GitHub" className="w-5 h-5 m-2" />{" "}
                 <p>GitHub</p>
               </button>
-              <button className="rounded-md bg-white font-small text-[#4731D3] dark:bg-[#252128] dark:text-white">
+              <button className="rounded-md bg-white font-small text-[#4731D3] dark:bg-[#252128] dark:text-white dark:border-white border p-2">
                 LinkedIn
               </button>
             </div>

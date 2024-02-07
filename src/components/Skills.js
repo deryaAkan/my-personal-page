@@ -7,6 +7,7 @@ import vscodeLogo from "../assests/Alternative-1/Skills-icons/Group 101-1.png";
 import figmaLogo from "../assests/Alternative-1/Skills-icons/figma-logo 1.png";
 import reduxLogo from "../assests/Alternative-1/Skills-icons/Group 101.png";
 
+
 const skillsData = [
   { logo: jsLogo, name: "JAVASCRIPT" },
   { logo: nodeLogo, name: "NODE" },
@@ -17,6 +18,7 @@ const skillsData = [
 ];
 
 export default function Skills() {
+
   return (
     <section className="CommonThings bg-white text-[#777777] dark:bg-[#252128]">
       <div className="w-2/3 gap-24 flex pt-12 pb-12">

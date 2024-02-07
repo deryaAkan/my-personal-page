@@ -33,7 +33,6 @@ export default function Projects() {
           <div className="flex flex-col gap-5 w-80">
             <h3 className="font-bold text-[32px] text-[#4731D3] dark:text-[#C1BAED]">{project.title}</h3>
             <p className="text-[16px] text-[#383838] dark:text-white">{project.description}</p>
-
             <div className="flex gap-2">
               {project.buttons.map((button, btnIndex) => (
                 <button key={btnIndex} className="rounded-full bg-[#4731D3] w-16 h-7 text-[14px] dark:bg-[#8173DA]">{button}</button>

@@ -1,0 +1,10 @@
+{
+    "Header": {
+        "heading" : "I am a Frontend Developer..",
+        "description" : "...who likes to craft solid and scalable frontend products with great user experiences."
+    },
+
+    "Skills": {
+        "heading": "Skills"
+    }
+}
