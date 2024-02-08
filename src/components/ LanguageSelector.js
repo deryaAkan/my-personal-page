@@ -1,9 +1,18 @@
-export default function LanguageSelector (){
-    return (
-        <>
-         <button className="dark:text-[#777777]">
-          <span className="text-[#CBF281] dark:text-[#BAB2E7]">TÜRKÇE'</span>YE GEÇ
-        </button>
-        </>
-    )
-}
+import React from 'react';
+
+export const LanguageSelector = ({ language, toggleLanguage }) => {
+
+  return (
+    <button onClick={toggleLanguage}>
+    {language === 'english' ? (
+        <span><span className="text-[#CBF281] dark:text-[#BAB2E7]">TÜRKÇE</span>'YE GEÇ</span>
+    ) : (
+        <span>TO <span className="text-[#CBF281] dark:text-[#BAB2E7]">ENGLISH</span></span>
+    )}
+    </button>
+  );
+};
+
+
+
+

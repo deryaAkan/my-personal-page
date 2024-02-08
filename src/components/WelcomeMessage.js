@@ -16,7 +16,6 @@ const WelcomeMessage = () => {
 
   return (
     <div>
-      {/* Sayfa içeriği buraya gelebilir */}
     </div>
   );
 };
