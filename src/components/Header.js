@@ -27,13 +27,17 @@ import darkLinkedInSvg from "../assests/Alternative-1/svg-img/brand/LinkedIndark
             {data.description}
             </p>
             <div className="flex gap-5">
+              <a href="https://github.com/deryaAkan" target="_blank">
               <button className="flex rounded-md bg-white items-center font-small text-[#4731D3] dark:bg-[#252128] dark:text-white dark:border-white border p-2">
                 <img src={theme === "light" ? githubSvg : darkGithubSvg} alt="GitHub" className="w-5 h-5 m-2"  />{" "}
                 <p>GitHub</p>
               </button>
-              <button className="flex rounded-md bg-white font-small text-[#4731D3] dark:bg-[#252128] dark:text-white dark:border-white border p-2">
+              </a>
+              <a href="https://www.linkedin.com/in/derya-akan-b03075292/" target="_blank">
+              <button className="flex rounded-md bg-white items-center font-small text-[#4731D3] dark:bg-[#252128] dark:text-white dark:border-white border p-2">
                 <img src={theme === "light" ? linkedInSvg : darkLinkedInSvg} alt="linkedin" className="w-5 h-5 m-2" />LinkedIn
               </button>
+              </a>
             </div>
           </div>
           <img src={headerImg} alt="HeaderIMG" className="grow-0" />

@@ -21,12 +21,12 @@ export default function Skills({data}) {
 
   return (
     <section className="CommonThings bg-white text-[#777777] dark:bg-[#252128]">
-      <div className="w-2/3 gap-24 flex pt-12 pb-12">
+      <div className="w-2/3 gap-20 flex pt-12 pb-12 flex-wrap">
         <div className="text-[#4832D3] text-[48px] font-bold dark:text-[#CBF281]">{data.heading}</div>
-        <div className="flex flex-wrap gap-24 dark:text-white">
+        <div className="flex flex-wrap gap-20 dark:text-white w-[660px] justify-end">
           {skillsData.map((skill, index) => (
             <div key={index} className="flex items-center w-72 gap-5">
-              <img src={skill.logo} alt={skill.name} />
+              <img className="w-[120px]" src={skill.logo} alt={skill.name} />
               <p className='text-[24px]'>{skill.name}</p>
             </div>
           ))}
