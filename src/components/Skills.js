@@ -8,16 +8,17 @@ import figmaLogo from "../assests/Alternative-1/Skills-icons/figma-logo 1.png";
 import reduxLogo from "../assests/Alternative-1/Skills-icons/Group 101.png";
 
 
-const skillsData = [
-  { logo: jsLogo, name: "JAVASCRIPT" },
-  { logo: nodeLogo, name: "NODE" },
-  { logo: reactLogo, name: "REACT" },
-  { logo: vscodeLogo, name: "VS CODE" },
-  { logo: reduxLogo, name: "REDUX" },
-  { logo: figmaLogo, name: "FIGMA" },
-];
 
 export default function Skills({data}) {
+
+  const skillsData = [
+    { logo: jsLogo, name: "JAVASCRIPT" },
+    { logo: nodeLogo, name: "NODE" },
+    { logo: reactLogo, name: "REACT" },
+    { logo: vscodeLogo, name: "VS CODE" },
+    { logo: reduxLogo, name: "REDUX" },
+    { logo: figmaLogo, name: "FIGMA" },
+  ];
 
   return (
     <section className="CommonThings bg-white text-[#777777] dark:bg-[#252128]">

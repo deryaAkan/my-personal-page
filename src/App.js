@@ -7,7 +7,6 @@ import Header from './components/Header';
 import Skills from './components/Skills';
 import Profile from './components/Profile';
 import Footer from './components/Footer';
-import WelcomeMessage from './components/WelcomeMessage';
 import useThemePreference from './hooks/useThemePreference';
 import dataENG from './Translation/en.json';
 import dataTR from './Translation/tr.json';
@@ -57,7 +56,6 @@ function App() {
   
   return (
     <div className={`App ${theme}`}>
-      <WelcomeMessage />
       <Header theme={theme} onToggleTheme={handleThemeSwitch} language={language} toggleLanguage={toggleLanguage} data={language === 'english' ? dataENG.Header : dataTR.Header}/>
       <Skills data={language === 'english' ? dataENG.Skills : dataTR.Skills} />
       <Profile data={language === 'english' ? dataENG.Profile : dataTR.Profile} />

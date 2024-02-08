@@ -33,7 +33,7 @@ import darkLinkedInSvg from "../assests/Alternative-1/svg-img/brand/LinkedIndark
                 <p>GitHub</p>
               </button>
               </a>
-              <a href="https://www.linkedin.com/in/derya-akan-b03075292/" target="_blank">
+              <a href="deryaAkanhttps://github.com/" target="_blank">
               <button className="flex rounded-md bg-white items-center font-small text-[#4731D3] dark:bg-[#252128] dark:text-white dark:border-white border p-2">
                 <img src={theme === "light" ? linkedInSvg : darkLinkedInSvg} alt="linkedin" className="w-5 h-5 m-2" />LinkedIn
               </button>
