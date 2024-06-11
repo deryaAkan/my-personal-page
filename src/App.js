@@ -1,49 +1,47 @@
-import React from 'react';
-import { useState, useEffect } from 'react'; 
-import axios from 'axios';
-import './App.css';
-import Projects from './components/Projects';
-import Header from './components/Header';
-import Skills from './components/Skills';
-import Profile from './components/Profile';
-import Footer from './components/Footer';
-import useThemePreference from './hooks/useThemePreference';
-import dataENG from './Translation/en.json';
-import dataTR from './Translation/tr.json';
-
+import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import "./App.css";
+import Projects from "./components/Projects";
+import Header from "./components/Header";
+import Skills from "./components/Skills";
+import Profile from "./components/Profile";
+import Footer from "./components/Footer";
+import useThemePreference from "./hooks/useThemePreference";
+import dataENG from "./Translation/en.json";
+import dataTR from "./Translation/tr.json";
 
 function App() {
   const [responseData, setResponseData] = useState(null);
-  const [language, setLanguage] = useState('english');
+  const [language, setLanguage] = useState("english");
   const prefersTheme = useThemePreference();
 
   const [theme, setTheme] = useState(
-    localStorage.getItem('theme') || (prefersTheme ? 'dark' : 'light')
+    localStorage.getItem("theme") || (prefersTheme ? "dark" : "light")
   );
 
   const toggleLanguage = () => {
-    setLanguage(language === 'english' ? 'turkish' : 'english');
+    setLanguage(language === "english" ? "turkish" : "english");
   };
 
-
   useEffect(() => {
-    document.documentElement.classList.toggle('dark', theme === 'dark');
-    localStorage.setItem('theme', theme);
+    document.documentElement.classList.toggle("dark", theme === "dark");
+    localStorage.setItem("theme", theme);
 
-    document.documentElement.classList.toggle('en', language === 'en');
-    localStorage.setItem('language', language);
+    document.documentElement.classList.toggle("en", language === "en");
+    localStorage.setItem("language", language);
 
     const postData = () => {
-      const selectedData = language === 'english' ? dataENG : dataTR;
+      const selectedData = language === "english" ? dataENG : dataTR;
 
       axios
-        .post('https://reqres.in/api/data', selectedData)
+        .post("https://reqres.in/api/data", selectedData)
         .then(function (response) {
-          console.log('API Response:', response);
+          console.log("API Response:", response);
           setResponseData(response.data);
         })
         .catch(function (error) {
-          console.error('API request error:', error);
+          console.error("API request error:", error);
         });
     };
 
@@ -51,16 +49,34 @@ function App() {
   }, [theme, language]);
 
   const handleThemeSwitch = () => {
-    setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
+    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
   };
-  
+
   return (
     <div className={`App ${theme}`}>
-      <Header theme={theme} onToggleTheme={handleThemeSwitch} language={language} toggleLanguage={toggleLanguage} data={language === 'english' ? dataENG.Header : dataTR.Header}/>
-      <Skills data={language === 'english' ? dataENG.Skills : dataTR.Skills} />
-      <Profile data={language === 'english' ? dataENG.Profile : dataTR.Profile} />
-      <Projects data={language === 'english' ? dataENG.Projects : dataTR.Projects} />
-      <Footer data={language === 'english' ? dataENG.Footer : dataTR.Footer} />
+      <Header
+        theme={theme}
+        onToggleTheme={handleThemeSwitch}
+        language={language}
+        toggleLanguage={toggleLanguage}
+        data={language === "english" ? dataENG.Header : dataTR.Header}
+      />
+      <Skills
+        data={language === "english" ? dataENG.Skills : dataTR.Skills}
+        theme={theme}
+      />
+      <Profile
+        data={language === "english" ? dataENG.Profile : dataTR.Profile}
+        theme={theme}
+      />
+      <Projects
+        data={language === "english" ? dataENG.Projects : dataTR.Projects}
+        theme={theme}
+      />
+      <Footer
+        data={language === "english" ? dataENG.Footer : dataTR.Footer}
+        theme={theme}
+      />
     </div>
   );
 }
