@@ -19,11 +19,11 @@
 }
 
 .light-gradient {
-  background: linear-gradient(to right, #F2E1CA, #978365);
+  background: linear-gradient(to right, #ADD8E6, #D3D3D3);
 }
 
 .dark-gradient {
-  background: linear-gradient(to right, #291F43, #978365);
+  background: linear-gradient(to right, #14121F, #3C2E69);
 }
 
 .switch {

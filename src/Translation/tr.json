@@ -1,7 +1,7 @@
 {
     "Header": {
-        "heading": "Ben Bir Fullstack Geliştiricisiyim..",
-        "description": "..mükemmel kullanıcı deneyimleriyle sağlam ve ölçeklenebilir ön uç ürünleri oluşturmayı seven."
+        "heading": "Selam, ben Derya.",
+        "description": "Bir Fullstack Yazılım Geliştiricisiyim ve bu da benim portföyüm."
     },
 
     "Skills": {
@@ -11,12 +11,12 @@
     "Profile": {
         "heading": "Profil",
         "basic_info": "Temel Bilgiler",
-       "birth_date": "İsim",
-       "residence": "Şehir",
-       "education": "Eğitim",
-       "role":"Rol",
+       "name": "İsim: Derya Akan",
+       "residence": "Şehir: Batman",
+       "education": "Eğitim: Boğaziçi Üniversitesi, Fizik",
+       "role":"Rol: Fullstack Geliştirici",
        "about_me": "Hakkımda",
-       "about_me_more": "Müşterinin kendisi, müşterinin şirketin adipisliğini takip edebilecektir. Gelsin ya da olmasın, emeğin yumuşaklığı dışında her türlü zevkinden nefret eder.En az şarjı keyifle açalım mı? Zaman ne kadar güzel olursa olsun bıraktıkları sözler"
+       "about_me_more": "Sevdiğim sayısız şey var ancak bu sınırlı alanda en büyük tutkularımdan birine odaklanacağım: kodlama. Bir Fullstack geliştirici olarak, kullanıcı dostu web siteleri ve uygulamalar oluşturma konusunda başarılıyım. Bu portföyde şu ana kadarki en gurur verici başarılarımdan bazılarını bulacaksınız. Özellikle gurur duyuyorum çünkü kısa süre önce sıfırdan başlamama rağmen şimdiden çok şey başardım :)"
     },
 
     "Projects": {

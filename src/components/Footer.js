@@ -23,12 +23,12 @@ export default function Footer({ data, theme }) {
         "dark-gradient": theme === "dark",
       })}
     >
-      <div className="w-1/2 flex flex-col justify-center items-center gap-5">
+      <div className="w-1/2 flex flex-col justify-center items-center gap-5 sm:w-full">
         <h3 className="font-bold text-[#591C47] text-[48px] dark:text-[#8F88FF]">
           {data.heading}
         </h3>
 
-        <p className="flex flex-wrap justify-center w-[400px] font-normal text-[24px] dark:text-white">
+        <p className="flex flex-wrap justify-center font-normal text-[24px] dark:text-white ">
           {data.description}
         </p>
 

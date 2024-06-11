@@ -19,11 +19,11 @@ export default function Skills({ data }) {
 
   return (
     <section className="CommonThings bg-white text-[#777777] dark:bg-[#1B1525]">
-      <div className="w-2/3 gap-20 flex pt-12 pb-12 flex-wrap">
+      <div className="w-2/3 gap-20 flex pt-12 pb-12 flex-wrap sm:w-full">
         <div className="text-[#591C47] text-[48px] font-bold dark:text-[#CBF281]">
           {data.heading}
         </div>
-        <div className="flex flex-wrap gap-20 dark:text-white w-[660px] justify-end">
+        <div className="flex flex-wrap gap-20 dark:text-white w-[660px] justify-end sm:w-full sm:justify-start">
           {skillsData.map((skill, index) => (
             <div key={index} className="flex items-center w-72 gap-5">
               <img className="w-[120px]" src={skill.logo} alt={skill.name} />
