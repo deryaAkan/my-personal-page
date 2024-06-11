@@ -23,7 +23,7 @@ export default function Profile({ data, theme }) {
             <p className="">{data.education}</p>
             <p className="py-2">{data.role}</p>
           </div>
-          <div className="flex flex-col justify-center items-center gap-5">
+          <div className="flex flex-col justify-center items-center gap-2">
             <img
               src={headerImg}
               alt="Profile"

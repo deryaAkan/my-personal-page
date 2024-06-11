@@ -1,20 +1,28 @@
 import React from "react";
 import "../App.css";
 import jsLogo from "../assests/Alternative-1/Skills-icons/js-logo 1.png";
-import nodeLogo from "../assests/Alternative-1/Skills-icons/node-logo 1.png";
-import reactLogo from "../assests/Alternative-1/Skills-icons/Rectangle 35.png";
-import vscodeLogo from "../assests/Alternative-1/Skills-icons/Group 101-1.png";
+import nodeLogo from "../assests/Alternative-1/Skills-icons/node-js-svgrepo-com.svg";
+import reactLogo from "../assests/Alternative-1/Skills-icons/react-svgrepo-com.svg";
+import vscodeLogo from "../assests/Alternative-1/Skills-icons/vs-code-svgrepo-com.svg";
 import figmaLogo from "../assests/Alternative-1/Skills-icons/figma-logo 1.png";
 import reduxLogo from "../assests/Alternative-1/Skills-icons/Group 101.png";
+import javalogo from "../assests/Alternative-1/Skill-icons-2/java-svgrepo-com.svg";
+import postgreLogo from "../assests/Alternative-1/Skill-icons-2/postgresql-svgrepo-com.svg";
+import springboot from "../assests/Alternative-1/Skill-icons-2/spring-svgrepo-com.svg";
+import intellij from "../assests/Alternative-1/Skill-icons-2/intellij-idea-svgrepo-com.svg";
 
 export default function Skills({ data }) {
   const skillsData = [
-    { logo: jsLogo, name: "JAVASCRIPT" },
-    { logo: nodeLogo, name: "NODE" },
-    { logo: reactLogo, name: "REACT" },
-    { logo: vscodeLogo, name: "VS CODE" },
-    { logo: reduxLogo, name: "REDUX" },
-    { logo: figmaLogo, name: "FIGMA" },
+    { logo: jsLogo, name: "JavaScript" },
+    { logo: javalogo, name: "Java" },
+    { logo: reactLogo, name: "React" },
+    { logo: springboot, name: "Spring" },
+    { logo: nodeLogo, name: "Node" },
+    { logo: postgreLogo, name: "PostgreSQL" },
+    { logo: vscodeLogo, name: "VS Code" },
+    { logo: intellij, name: "IntelliJ IDEA" },
+    { logo: reduxLogo, name: "Redux" },
+    { logo: figmaLogo, name: "Figma" },
   ];
 
   return (
