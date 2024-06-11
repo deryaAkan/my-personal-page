@@ -4,7 +4,7 @@ import ToggleThemeButton from "./ToggleThemeButton";
 import LanguageSelector from "./ LanguageSelector";
 import "../App.css";
 import githubSvg from "../assests/Alternative-1/svg-img/brand/github.svg";
-import headerImg from "../assests/Alternative-1/foto.png";
+import headerImg from "../assests/Alternative-1/Ekran Resmi 2024-06-12 01.54.40.png";
 import linkedInSvg from "../assests/Alternative-1/svg-img/brand/LinkedIn.svg";
 import darkGithubSvg from "../assests/Alternative-1/svg-img/brand/githubdgithub.svg";
 import darkLinkedInSvg from "../assests/Alternative-1/svg-img/brand/LinkedIndarklinkedn.svg";
@@ -70,7 +70,11 @@ const Header = ({ theme, onToggleTheme, toggleLanguage, language, data }) => {
               </a>
             </div>
           </div>
-          <img src={headerImg} alt="Header" className="grow-0" />
+          <img
+            src={headerImg}
+            alt="Header"
+            className="grow-0 w-[400px] h-[400px] rounded-xl"
+          />
         </div>
       </div>
     </header>

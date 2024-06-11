@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import headerImg from "../assests/Alternative-1/foto.png";
+import headerImg from "../assests/Alternative-1/Ekran Resmi 2024-06-12 01.54.40.png";
 import classNames from "classnames";
 
 export default function Profile({ data, theme }) {
@@ -27,7 +27,7 @@ export default function Profile({ data, theme }) {
             <img
               src={headerImg}
               alt="Profile"
-              className="w-[400px] h-[400px]"
+              className="w-[400px] h-[400px] rounded-xl"
             />
           </div>
           <div className="flex flex-col gap-8 w-[300px] grow-0 ">
